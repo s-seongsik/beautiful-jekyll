@@ -15,7 +15,6 @@ author: SikSik
 
 navbar-links:
   About Me: "aboutme"
-  Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
@@ -36,12 +35,8 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "sungsik9831@gmail.com"
+  github: "https://github.com/s-seongsik/"
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
