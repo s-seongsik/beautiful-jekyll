@@ -192,7 +192,7 @@ footer-link-col: "#404040"
 timezone: "Asia/Seoul"
 markdown: kramdown
 highlighter: rouge
-permalink: /
+permalink: /:title/
 paginate: 5
 
 kramdown:
