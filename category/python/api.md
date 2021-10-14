@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: category
 title: API 입니다.
 subtitle: API란 무엇인가?
 gh-repo: daattali/beautiful-jekyll
