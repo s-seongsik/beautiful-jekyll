@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: post
 title: API란 무엇이며, 좋은 API를 설계하기 위한 방법이 무엇일까?
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
