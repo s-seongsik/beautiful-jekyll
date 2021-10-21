@@ -68,12 +68,12 @@ OPTIONS 메서드로 서버에 예비 요청을 보낸뒤, 서버는 예비 요�
 -------------
 
 ## FastAPI로 개발된 REST API로 CORS 테스트!
-1. 현재 내가 위치한 브라우저는 'https://www.naver.com' 이다. 즉 naver.com에서 API서버에 리소스를 요청한다고 생각해보자.  
+1. 현재 내가 위치한 브라우저는 'https://beomy.github.io' 이다. 즉 'https://beomy.github.io' 에서 API서버에 리소스를 요청한다고 생각해보자.  
+![image](https://user-images.githubusercontent.com/52439201/138238315-0d29ecf0-f487-4015-8362-8ea4a8d92c53.png)
 
-![image](https://user-images.githubusercontent.com/52439201/138235829-1d72bd80-23fe-4ba9-8157-14efbe75358a.png)
 
-
-2. localhost:8000/user 호출 시 아래의 리스트를 응답  
+2. REST API
+(GET) localhost:8000/user 호출 시 아래의 리소스를 리턴
 ```
 [
   {
@@ -84,3 +84,13 @@ OPTIONS 메서드로 서버에 예비 요청을 보낸뒤, 서버는 예비 요�
   }
 ]
 ```
+
+3. 현재 내가 위치한 브라우저의 출처에서 API의 리소스를 요청하면 아래와 같이 Access-Control-Allow-Origin 헤더가 요청리소스에 포함되어 있지 않다라는 오류가 뜬다.  
+![image](https://user-images.githubusercontent.com/52439201/138238372-4c46902b-c2c7-42d2-b17e-e0dab315403f.png)
+
+
+4. FastAPI 서버에서 응답헤더에 Access-Control-Allow-Origin와 출처를 추가해준다.  
+![image](https://user-images.githubusercontent.com/52439201/138239252-f05afda6-16d2-4b93-834a-ee9badbfdd3b.png)
+
+
+
