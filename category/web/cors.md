@@ -68,4 +68,4 @@ OPTIONS 메서드로 서버에 예비 요청을 보낸뒤, 서버는 예비 요�
 -------------
 
 ## FastAPI로 개발된 REST API로 CORS 테스트!
-
+![image](https://user-images.githubusercontent.com/52439201/138235829-1d72bd80-23fe-4ba9-8157-14efbe75358a.png)
