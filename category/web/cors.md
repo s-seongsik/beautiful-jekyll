@@ -68,4 +68,39 @@ OPTIONS 메서드로 서버에 예비 요청을 보낸뒤, 서버는 예비 요�
 -------------
 
 ## FastAPI로 개발된 REST API로 CORS 테스트!
+1. 현재 내가 위치한 브라우저는 'https://beomy.github.io' 이다. 즉 'https://beomy.github.io' 에서 API서버에 리소스를 요청한다고 생각해보자.  
+![image](https://user-images.githubusercontent.com/52439201/138238315-0d29ecf0-f487-4015-8362-8ea4a8d92c53.png)
 
+2. REST API  
+(GET) localhost:8000/user 호출 시 아래의 리소스를 리턴
+```
+[
+  {
+    "username": "Rick"
+  },
+  {
+    "username": "Morty"
+  }
+]
+```
+
+3. 현재 내가 위치한 브라우저의 출처에서 API의 리소스를 요청하면 아래와 같이 Access-Control-Allow-Origin 헤더가 요청리소스에 포함되어 있지 않다라는 오류가 뜬다.  
+![image](https://user-images.githubusercontent.com/52439201/138239426-54668cc0-ca94-48ff-b5ad-266779257c38.png)
+
+4. FastAPI 서버에서 응답헤더에 Access-Control-Allow-Origin와 출처를 추가해준다.   
+* allow_methods=["*"]은 Access-Control-Allow-Methods POST, GET, PUT, DELETE 모두 허용이고 
+* allow_headers=["*"]은 Access-Control-Allow-Headers 응답 헤더를 모두 허용하겠다는 의미이다.
+
+![image](https://user-images.githubusercontent.com/52439201/138239252-f05afda6-16d2-4b93-834a-ee9badbfdd3b.png)
+
+5. 다시 요청을 보내면 서버에서 리소스가 리턴되는 것을 확인할 수 있다.
+![image](https://user-images.githubusercontent.com/52439201/138239564-b992115f-6595-4215-b933-8669731c288c.png)
+
+6. 개발자 도구 > Network에서 응답 헤더를 확인해보면 서버에서 Access-Control-Allow-Origin 헤더를 브라우저에 보낸것을 확인할 수 있다!.  
+![image](https://user-images.githubusercontent.com/52439201/138240176-adbc5c1d-7de3-41d2-a004-7f9753eecfaa.png)
+
+
+## 끝으로
+프론트엔드 개발자 입장에서 서버로 리소스를 요청할 때 CORS 에러가 발생한다면, 서버에 Access-Control-Allow-Origin 등 CORS를 해결하기 위한 몇 가지 응답 헤더를 포함해 달라고 요청한다는 것을 배웠다. 
+
+Node.js, FastAPI 등의 대부분의 프레임워크에서 CORS 응답 헤더를 추가해 주기는 기능이 있어 간편하게 사용할 수 있지만, CORS가 무엇이고 해당 프레임워크의 지원이 없더라도 CORS 에러 문제가 발생할 때 발생원인과 어떻게 해결해야 되는지 알아보는 시간이었다.
