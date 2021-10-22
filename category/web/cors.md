@@ -32,13 +32,6 @@ CORS를 이해기 위해서는 **출처(Origin)** 라는 개념을 알아야한�
 
 - https://localhost:8080/user?page=1#Origin이란?  
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
 
 | Protocol | Host | Port(생략가능) | Path | Query String | Fragment |   
 | :------ |:--- | :--- | :------ |:--- | :--- |  
