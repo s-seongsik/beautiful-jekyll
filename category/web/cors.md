@@ -32,9 +32,9 @@ CORS를 이해기 위해서는 **출처(Origin)** 라는 개념을 알아야한�
 
 - https://localhost:8080/user?page=1#Origin이란?
 
-| Protocol | Host | Port(생략가능) | Path | Query String | Fragment | 
-| :------ |:--- | :--- | :------ |:--- | :--- |
-| https | localhost | 8080 | user | pase=1 | Origin이란? |
+| Protocol | Host | Port(생략가능) | Path | Query String | Fragment |   
+| :------ |:--- | :--- | :------ |:--- | :--- |  
+| https | localhost | 8080 | user | pase=1 | Origin이란? |  
 * 출처란 URL 구조에서 Protocol, Host, Port를 합친 것을 말한다.
 
 -------------
