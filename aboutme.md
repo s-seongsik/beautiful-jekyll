@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 
-subtitle: 안녕하세요. 서성식입니다.
+title: 안녕하세요. 서성식입니다.
+subtitle: 
 ---
 
 저는 2년차 풀스택 개발자 서성식입니다.
