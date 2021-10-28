@@ -15,25 +15,36 @@ subtitle:
 
 입니다.
 
-회사에서 짜여진 각본대로 움직여야한다면, 적어도 의도와 이유는 알고 행동하려고 합니다.
+짜여진 각본대로 움직여야한다면, 적어도 의도와 이유는 알고 행동하려고 합니다.
 
 
 ## 기술스택
 
 ### 백엔드
-- JAVA Spring 
-- python Flask, FastAPI
-- MS-SQL
-- MYSQL
+> JAVA Spring
+
+> Flask  
+
+> FastAPI  
+
+> MS-SQL  
+
+> MYSQL  
 
 ### 프론트엔드
-- jqeury
-- javascript
-- HTML
-- CSS
+> jqeury
+
+> javascript
+
+> HTML
+
+> CSS
 
 ### 서버
-- naver cloud
-- linux
-- winodws
-- docker
+> naver cloud
+
+> linux
+
+> winodws
+
+> docker
